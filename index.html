@@ -1,5 +1,26 @@
-<html>
-  <body>
-    <h2>Hello, World! </h2>
-  </body>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Віртуальна дошка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="toolbar">
+    <button onclick="addNote()">⬜</button>
+    <button onclick="setColor('#e3f2fd')">🔵</button>
+    <button onclick="setColor('#fff9c4')">🟡</button>
+    <button onclick="setColor('#c8e6c9')">🟢</button>
+    <button onclick="deleteSelected()">🗑</button>
+  </div>
+
+  <div class="board" id="board"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
